@@ -106,6 +106,7 @@ header .layout-wide {
     color: var(--alternative-text-color);
     font-size: var(--font-size-site-title);
     text-align: right;
+    font-family: var(--font-heading);
 }
 
 /* ----------- NAVIGATION */
