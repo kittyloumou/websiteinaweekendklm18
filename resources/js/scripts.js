@@ -1,0 +1,2 @@
+// call cssVars function
+cssVars();
