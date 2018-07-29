@@ -151,6 +151,10 @@ header .layout-wide {
 
 .navigation {
   background-color: var(--alternative-bg-color);
+
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .nav-prompt {
@@ -209,23 +213,19 @@ header .layout-wide {
 }
 
 @media screen and (max-width: 800px) {
-    .nav-inner {
-        transition: var(--transition-time);
-        overflow: hidden;
-    }
+  .nav-inner {
+    transition: var(--transition-time);
+    overflow: hidden;
+  }
 
-    .nav-inner[aria-expanded="false"] {
-        max-height: 0;
-    }
+  .nav-inner[aria-expanded="false"] {
+    max-height: 0;
+  }
 
-    .nav-inner[aria-expanded="true"] {
-        max-height: 100vh;
-    }
+  .nav-inner[aria-expanded="true"] {
+    max-height: 100vh;
+  }
 }
-
-
-
-
 
 /* ----------- FOOTER */
 
