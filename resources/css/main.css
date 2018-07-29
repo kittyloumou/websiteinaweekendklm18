@@ -288,43 +288,63 @@ input[type="email"] {
 /* ----------- MODULES */
 
 .hero-module {
-    position: relative;
-
+  position: relative;
 }
 
 .hero-module img {
-    width: 100%;
+  width: 100%;
 }
 
 @media screen and (min-width: 800px) {
+  .hero-content {
+    position: absolute;
+    bottom: 0;
 
-    .hero-content {
-        position: absolute;
-        bottom: 0;
+    text-align: center;
+    height: 100%;
+    width: 100%;
 
-        text-align: center;
-        height: 100%;
-        width: 100%;
+    display: flex;
+    align-items: center;
+  }
 
-        display: flex;
-        align-items: center;
-    }
-
-    .hero-content h1 {
-        color: white;
-        text-shadow: 0px 1px 10px var(--strong-text-color);
-    }
+  .hero-content h1 {
+    color: white;
+    text-shadow: 0px 1px 10px var(--strong-text-color);
+  }
 }
 
 /** grid**/
 
 @media screen and (min-width: 800px) {
+  .content-area-grid {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    justify-content: space-between;
+  }
+}
 
-    .content-area-grid {
-        display: grid;
-        grid-template-columns: 48% 48%;
-        justify-content: space-between;
-        
+/* image gallery */
+.image-gallery ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
 
-    }
+.image-gallery li {
+  float: left;
+  margin: 10px;
+  max-width: 250px;
+}
+
+.image-gallery a img {
+  filter: grayscale(70%);
+  box-shadow: 0px 1px 10px var(--strong-text-color);
+  transition: var(--transition-time);
+}
+
+.image-gallery a:hover img {
+    filter: unset;
+    transform: scale(1.05);
 }
